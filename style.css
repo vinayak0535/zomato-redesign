@@ -197,7 +197,7 @@ section.features {
 .colm {
     padding: 10px 15px;
     text-align: center;
-    flex-basis: 25%;
+    flex-basis: 22%;
 
 }
 
@@ -210,13 +210,13 @@ section.features {
 }
 
 .colm h4 {
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 18px;
     margin-top: 14px;
 }
 
 .colm p {
-    font-size: 18px;
+    font-size: 14px;
     color: #444;
     margin-top: 14px;
 }
@@ -337,11 +337,11 @@ section.footer {
     /* hero */
     
     section.hero {
-        height: 60vh;
+        height: 50vh;
     }
 
     .hero-content {
-             transform: translate(5%,50%);
+             transform: translateY(50%);
     }
 
     .hero h1 {
@@ -399,9 +399,10 @@ section.footer {
     }
 
     .food-search i {
-        margin-right: -20px;
         z-index: 1;
         margin-left: 0;
+         margin-right: 10px;
+        color: #fff;
     }
 
     /* Features */
@@ -446,11 +447,14 @@ section.features {
     
     .row{
         gap: 15px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+
     }
 
     .col {
-        width: 220px;
-        height: 175px;
+                flex-basis: 48%;
                 background-size: cover;
 
     }
@@ -471,7 +475,7 @@ section.features {
     }
 
     .restau{
-        width: max-content;
+        width: 90%;
     }
 
     .info {
@@ -498,10 +502,14 @@ section.features {
         margin-block: 10px;
     }
 
+      .cta{
+        justify-content: space-around;
+    }
+
     /* FOOOTER */
 
     section.footer {
-                padding: 20px 40px;
+                padding: 10px 20px;
 
     }
 
@@ -531,6 +539,6 @@ section.features {
 
       .foot-cols {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
