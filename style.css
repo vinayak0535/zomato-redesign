@@ -57,15 +57,14 @@ section.hero {
         url(img/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 80svh;
-    /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 01), rgba(0, 0, 0, 0.6)); */
+    height: 90vh;
 }
 
 input::placeholder{
     padding: 2px;
 }
 .hero-content {
-    transform: translate(10%,50%);
+    transform: translate(10%,30%);
 }
 
 
