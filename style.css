@@ -421,16 +421,18 @@ section.features {
     .colm {
         padding: 4px 8px;
         border-radius: 8px;
+        flex-basis:23%
     }
 
     .colm i {
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px;
     }
 
     .colm h4 {
         font-weight: 500;
-        font-size: 12px;
+        font-size: 10px;
+        margin-top:5px
     }
 
     .colm p {
@@ -447,7 +449,7 @@ section.features {
 
     
     .row{
-        gap: 14px;
+        gap: 12px;
                 flex-wrap: wrap;
 
 
