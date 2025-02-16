@@ -212,7 +212,7 @@ section.features {
 .colm h4 {
     font-weight: 500;
     font-size: 18px;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
 .colm p {
@@ -337,11 +337,11 @@ section.footer {
     /* hero */
     
     section.hero {
-        height: 50vh;
+        height: 60vh;
     }
 
     .hero-content {
-             transform: translateY(50%);
+             transform: translate(10%,30%);
     }
 
     .hero h1 {
@@ -380,9 +380,10 @@ section.footer {
     }
 
     .location i {
-        margin-right: -20px;
-        z-index: 1;
-                color: #fff;
+       z-index: 1;
+        margin-left: 0;
+         margin-right: 10px;
+        color: #fff;
 
     }
 
@@ -423,19 +424,19 @@ section.features {
     }
 
     .colm i {
-        font-size: 22px;
+        font-size: 20px;
         padding: 10px;
     }
 
     .colm h4 {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .colm p {
-        font-size: 10px;
+        font-size: 8px;
         color: #444;
-        margin-top: 7px;
+        margin-top: 5px;
     }
 
     /* Popular Cuisines */
@@ -448,7 +449,6 @@ section.features {
     .row{
         gap: 15px;
                 flex-wrap: wrap;
-                justify-content: space-around;
 
 
     }
@@ -514,7 +514,7 @@ section.features {
     }
 
     .f-col h4 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
        .f-col p {
@@ -537,8 +537,5 @@ section.features {
         font-size: 10px;
     }
 
-      .foot-cols {
-        display: flex;
-        justify-content: space-around;
-    }
+   
 }
