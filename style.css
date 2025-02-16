@@ -147,7 +147,7 @@ section.popular {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-size 0.2s ease-in-out;
+    transition: background-size 0.5s ease-in-out;
     cursor: pointer;
     position: relative;
 }
@@ -309,9 +309,9 @@ section.footer {
 
 .foot-cols {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
 }
-
+.
 .f-col li {
     list-style: none;
     padding-block: 5px;
@@ -341,7 +341,7 @@ section.footer {
     }
 
     .hero-content {
-             transform: translate(10%,30%);
+             transform: translate(4%,30%);
     }
 
     .hero h1 {
@@ -350,7 +350,7 @@ section.footer {
     }
 
     .hero h3 {
-        font-size: 18px;
+        font-size: 16px;
 
     }
 
@@ -382,7 +382,7 @@ section.footer {
     .location i {
        z-index: 1;
         margin-left: 0;
-         margin-right: 10px;
+         margin-right: 5px;
         color: #fff;
 
     }
@@ -402,7 +402,7 @@ section.footer {
     .food-search i {
         z-index: 1;
         margin-left: 0;
-         margin-right: 10px;
+         margin-right: 5px;
         color: #fff;
     }
 
@@ -454,8 +454,11 @@ section.features {
     }
 
     .col {
-                flex-basis: 48%;
-                background-size: cover;
+         width: 280px;
+        height: 200px;
+        flex-basis: 48%;
+        background-size: cover;
+            transition: background-size 0.4s ease-in-out;
 
     }
 
@@ -513,12 +516,24 @@ section.features {
 
     }
 
+      .foot-cols {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* gap: 15px; */
+    }
+
+    .f-col{
+        flex-basis: 45%;
+        margin-top:20px;
+    }
+
     .f-col h4 {
-        font-size: 10px;
+        font-size: 14px;
     }
 
        .f-col p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .logo h1 {
