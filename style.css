@@ -341,7 +341,7 @@ section.footer {
     }
 
     .hero-content {
-             transform: translate(4%,30%);
+             transform: translate(2%,30%);
     }
 
     .hero h1 {
@@ -382,7 +382,7 @@ section.footer {
     .location i {
        z-index: 1;
         margin-left: 0;
-         margin-right: 5px;
+         margin-right: 3px;
         color: #fff;
 
     }
@@ -402,7 +402,7 @@ section.footer {
     .food-search i {
         z-index: 1;
         margin-left: 0;
-         margin-right: 5px;
+         margin-right: 3px;
         color: #fff;
     }
 
@@ -447,7 +447,7 @@ section.features {
 
     
     .row{
-        gap: 15px;
+        gap: 14px;
                 flex-wrap: wrap;
 
 
@@ -456,7 +456,7 @@ section.features {
     .col {
          width: 280px;
         height: 200px;
-        flex-basis: 48%;
+        flex-basis: 46%;
         background-size: cover;
             transition: background-size 0.4s ease-in-out;
 
@@ -512,14 +512,14 @@ section.features {
     /* FOOOTER */
 
     section.footer {
-                padding: 10px 20px;
+                padding: 30px 20px;
 
     }
 
       .foot-cols {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         /* gap: 15px; */
     }
 
