@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+.container {
+    padding: 35px 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #e11d48;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    color: #fff;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 35px;
+    margin-right: 10px;
+    color: #e11d48;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.buttons h4 {
+    font-weight: 400;
+}
+
+section.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80svh;
+    /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 01), rgba(0, 0, 0, 0.6)); */
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.hero-content h3 {
+    color: #e9e9e9;
+    font-weight: 400;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    /* width: 600px; */
+    width: max-content;
+    margin: 10px auto;
+
+
+}
+
+.location input {
+    width: 150px;
+    border-right: 1px solid #555 !important;
+}
+
+.location i {
+    color: #e11d48;
+    font-size: 20px;
+}
+
+
+.search input {
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.food-search i {
+    margin-left: 10px;
+}
+
+.food-search input {
+    padding-left: 2px;
+    width: 300px;
+}
+
+
+/* Popular Cuisine */
+
+section.popular {
+    margin-block: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 40px;
+
+}
+
+.col {
+    width: 320px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.col::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    transition: all 0.4s ease-in-out;
+}
+
+.col h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+
+
+.col:hover {
+    background-size: 120%;
+
+}
+
+
+
+/* FEATURES */
+
+section.features {
+    margin-block: 30px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.colm {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.colm i {
+    font-size: 28px;
+    color: #f88080;
+
+    padding: 15px;
+    background-color: #fff1f1;
+    border-radius: 50%;
+}
+
+.colm h4 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 14px;
+}
+
+.colm p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 14px;
+}
+
+/* Restaurants */
+
+
+
+.hotels {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.info {
+    padding: 10px 20px;
+}
+
+.info h3 {
+    font-size: 24px;
+}
+
+.info p {
+    font-size: 14px;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 24px;
+    background-color: rgb(211, 210, 210);
+    width: fit-content;
+    margin-block: 10px;
+}
+
+.restau {
+    box-shadow: 4px 8px 8px #dfdddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+}
+
+.restau:hover.restau img {
+    transform: scale(1.05);
+}
+
+.restau:hover {
+    box-shadow: 4px 8px 8px #adadad;
+
+}
+
+
+
+.restau img {
+    width: 430px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* overflow: hidden; */
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 15px;
+}
+
+.cta button {
+    padding: 8px 16px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: #f8cdcd;
+    color: rgb(253, 66, 66);
+    font-size: 14px;
+}
+
+.time {
+    color: #333;
+    font-size: 14px;
+}
+
+
+section.footer {
+    background-color: #f79696;
+}
+
+.foot-cols {
+    display: flex;
+    justify-content: space-around;
+}
+
+.f-col li {
+    list-style: none;
+    padding-block: 5px;
+}
+
+.f-col .logo h1 {
+    color: #000;
+
+
+}
+
+
+.f-col h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+
+    .container {
+        padding: 20px 40px;
+    }
+
+
+    /* hero */
+    section.hero {
+        height: 60vh;
+    }
+
+    .hero-content {
+        top: 30%;
+        left: 15%;
+        text-align: center;
+
+    }
+
+    .hero h1 {
+        font-size: 30px;
+
+    }
+
+    .hero h3 {
+        font-size: 18px;
+
+    }
+
+    .search {
+        display: block;
+        gap: 20px;
+        width: 100%;
+        padding: 5px 10px;
+        background-color: transparent;
+        margin: auto;
+    }
+
+    .search input {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+
+    .location {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .location i {
+        margin-right: -20px;
+        z-index: 1;
+    }
+
+    .food-search {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .food-search input {
+        width: 100%;
+    }
+
+    .food-search i {
+        margin-right: -20px;
+        z-index: 1;
+        margin-left: 0;
+    }
+
+    /* Features */
+
+    
+section.features {
+    margin-block: 15px;
+}
+
+    .line {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .colm {
+        padding: 4px 8px;
+        border-radius: 8px;
+    }
+
+    .colm i {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .colm h4 {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .colm p {
+        font-size: 12px;
+        color: #444;
+        margin-top: 7px;
+    }
+
+    /* Popular Cuisines */
+
+    section.popular {
+        margin-block: 10px;
+    }
+
+    
+    .row{
+        gap: 15px;
+    }
+
+    .col {
+        width: 220px;
+        height: 175px;
+    }
+
+    .col h1 {
+        bottom: 8px;
+        left: 8%;
+        font-size: 16px;
+    
+    }
+
+    /* Popular Restaurant */
+
+    .hotels {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .restau{
+        width: max-content;
+    }
+
+    .info {
+        padding: 5px 10px;
+    }
+    
+    .restau img {
+        width: 380px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+    
+    .info p {
+        font-size: 12px;
+        color: #444;
+        padding: 5px 10px;
+        border-radius: 24px;
+        background-color: rgb(211, 210, 210);
+        width: fit-content;
+        margin-block: 10px;
+    }
+
+    /* FOOOTER */
+
+    section.footer {
+        font-size: 80%;
+    }
+
+    .f-col h4 {
+        font-size: 14px;
+    }
+
+    .logo h1 {
+        font-size: 30px;
+    }
+
+    .popular h1{
+        text-align: center;
+    }
+    .restro h1,p{
+        text-align: center;
+    }
+
+    .f-col li {
+        padding-block: 2px;
+        font-size: 12px;
+    }
+}
