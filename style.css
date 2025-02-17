@@ -513,15 +513,15 @@ section.features {
     /* FOOOTER */
 
     section.footer {
-                padding: 20px 10px;
+                padding: 20px 40px;
 
     }
 
       .foot-cols {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        /* gap: 15px; */
+        justify-content:space-between;
+        gap: 20px;
     }
 
     .f-col{
